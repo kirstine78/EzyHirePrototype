@@ -25,7 +25,7 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="nav_buttons"><a href="{{ url('/') }}" style="color:black;">Home</a></li>
+					<li class="nav_buttons"><a href="{{ url('/?isLoggedIn=true') }}" style="color:black;">Home</a></li>
 					<li class="nav_buttons"><a href="{{ url('suburbs') }}"  style="color:black;">Suburbs</a></li>
 					<li class="nav_buttons"><a href="{{ url('brands') }}"  style="color:black;">Brands</a></li>
 
@@ -62,9 +62,13 @@
 
 					<li class="nav_buttons"><a href="{{ url('archive') }}" style="color:black;">Archive</a></li>
 					<li class="nav_buttons"><a href="{{ url('register') }}" style="color:black;">Register</a></li>
-					<li class="nav_buttons"><a href="{{ url('login') }}">Login</a></li>
-					<li class="nav_buttons"><a href="{{ url('logout') }}">Logout</a></li>
 				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav_buttons"><a href="{{ url('login') }}"></span>Login</a></li>
+					<li class="nav_buttons"><a href="{{ url('logout') }}"></span>Logout</a></li>
+				</ul>
+
 			</div>
 
 		</div>
@@ -72,6 +76,13 @@
 	</nav>
 
 	@yield('content')
+
+
+	@if($isLoggedIn)
+		<div>You are logged in</div>
+	@else
+		<div>You are not logged in</div>
+	@endif
 
 	<div class="panel-footer">
 		<p class="copyright">EzyHire</p>
