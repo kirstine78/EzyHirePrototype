@@ -36,8 +36,8 @@
 							<li class="nav_buttons"><a href="{{ url('customer/add') }}"  style="color:black;">Add Customer</a></li>
 							<li class="nav_buttons"><a href="{{ url('customer/update') }}"  style="color:black;">Update Customer</a></li>
 							<li class="nav_buttons"><a href="{{ url('customer/delete') }}"  style="color:black;">Delete Customer</a></li>
-							<li class="nav_buttons"><a href="{{ url('customer/bookinglist') }}"  style="color:black;">Booking List by Customer</a></li>
-							<li class="nav_buttons"><a href="{{ url('customer/damagelist') }}"  style="color:black;">Damage List by Customer</a></li>
+							<li class="nav_buttons"><a href="{{ url('customer/bookinglist') }}"  style="color:black;">List Bookings by Customer</a></li>
+							<li class="nav_buttons"><a href="{{ url('customer/damagelist') }}"  style="color:black;">List Damages by Customer</a></li>
 						</ul>
 					</li>
 
