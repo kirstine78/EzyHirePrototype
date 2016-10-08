@@ -11,6 +11,38 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// HomeController
+Route::get('/','HomeController@index' );
+
+// SuburbController
+Route::get('suburbs','SuburbController@index' );
+
+// BrandController
+Route::get('brands','BrandController@index' );
+
+// ArchiveController
+Route::get('archive','ArchiveController@index' );
+
+// RegisterController
+Route::get('register','RegisterController@index' );
+
+// LogoutController
+Route::get('logout','LogoutController@index' );
+
+
+
+
+
+
+
+// SuburbController
+Route::get('customer','BrandController@index' );
+
+// SuburbController
+Route::get('brands','BrandController@index' );
+
+// SuburbController
+Route::get('brands','BrandController@index' );
+
+// SuburbController
+Route::get('brands','BrandController@index' );
