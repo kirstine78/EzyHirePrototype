@@ -9,6 +9,36 @@
 
                 <div class="panel-body">
                     Update Hire Rate Page Under Construction!!!
+                    <br/>
+                    <br/>
+
+                    Rego no
+                    <br/>
+                    <input value="XYZ123" disabled>
+                    <br/>
+                    <br/>
+                    etc.
+                    <br/>
+                    <input value="blabla" disabled >
+                    <br/>
+                    <br/>
+                    etc.
+                    <br/>
+                    <input value="blabla" disabled>
+                    <br/>
+                    <br/>
+                    Hire rate
+                    <br/>
+                    <input value="$90" >
+                    <br/>
+                    <br/>
+                    <br/>
+                    <form action="/vehicle" method="GET">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-btn fa-trash">Update</i>
+                        </button>
+                        button click will on success redirect to vehicle overview
+                    </form>
                 </div>
             </div>
         </div>

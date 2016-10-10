@@ -21,13 +21,17 @@ Route::get('suburbs','SuburbController@index' );
 Route::get('brands','BrandController@index' );
 
 // CustomerController
+Route::get('customer','CustomerController@index' );
 Route::get('customer/add','CustomerController@addCustomer' );
 Route::get('customer/update','CustomerController@updateCustomer' );
 Route::get('customer/delete','CustomerController@deleteCustomer' );
-Route::get('customer/bookinglist','CustomerController@listBookingsByCustomer' );
-Route::get('customer/damagelist','CustomerController@listDamageByCustomer' );
+
+// ListController
+Route::get('list/bookings','ListController@listBookingsByCustomer' );
+Route::get('list/damages','ListController@listDamagesByCustomer' );
 
 // VehicleController
+Route::get('vehicle','VehicleController@index' );
 Route::get('vehicle/add','VehicleController@addVehicle' );
 Route::get('vehicle/retire','VehicleController@retireVehicle' );
 Route::get('vehicle/rateupdate','VehicleController@updateHireRate' );

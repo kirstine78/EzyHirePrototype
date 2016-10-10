@@ -25,29 +25,18 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="nav_buttons"><a href="{{ url('/?isLoggedIn=true') }}" style="color:black;">Home</a></li>
+					<li class="nav_buttons"><a href="{{ url('/') }}" style="color:black;">Home</a></li>
 					<li class="nav_buttons"><a href="{{ url('suburbs') }}"  style="color:black;">Suburbs</a></li>
 					<li class="nav_buttons"><a href="{{ url('brands') }}"  style="color:black;">Brands</a></li>
+					<li class="nav_buttons"><a href="{{ url('customer') }}" style="color:black;">Customer</a></li>
+					<li class="nav_buttons"><a href="{{ url('vehicle') }}" style="color:black;">Vehicle</a></li>
 
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">Customer
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">List
 							<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li class="nav_buttons"><a href="{{ url('customer/add') }}"  style="color:black;">Add Customer</a></li>
-							<li class="nav_buttons"><a href="{{ url('customer/update') }}"  style="color:black;">Update Customer</a></li>
-							<li class="nav_buttons"><a href="{{ url('customer/delete') }}"  style="color:black;">Delete Customer</a></li>
-							<li class="nav_buttons"><a href="{{ url('customer/bookinglist') }}"  style="color:black;">List Bookings by Customer</a></li>
-							<li class="nav_buttons"><a href="{{ url('customer/damagelist') }}"  style="color:black;">List Damages by Customer</a></li>
-						</ul>
-					</li>
-
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">Vehicle
-							<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li class="nav_buttons"><a href="{{ url('vehicle/add') }}"  style="color:black;">Add Vehicle</a></li>
-							<li class="nav_buttons"><a href="{{ url('vehicle/retire') }}"  style="color:black;">Retire Vehicle</a></li>
-							<li class="nav_buttons"><a href="{{ url('vehicle/rateupdate') }}"  style="color:black;">Update Hire Rate</a></li>
+							<li class="nav_buttons"><a href="{{ url('list/bookings') }}"  style="color:black;">Bookings by Customer</a></li>
+							<li class="nav_buttons"><a href="{{ url('list/damages') }}"  style="color:black;">Damages by Customer</a></li>
 						</ul>
 					</li>
 
@@ -76,13 +65,6 @@
 	</nav>
 
 	@yield('content')
-
-
-	@if($isLoggedIn)
-		<div>You are logged in</div>
-	@else
-		<div>You are not logged in</div>
-	@endif
 
 	<div class="panel-footer">
 		<p class="copyright">EzyHire</p>

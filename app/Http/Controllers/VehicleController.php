@@ -8,6 +8,10 @@ use App\Http\Requests;
 
 class VehicleController extends Controller
 {
+    public function index(){
+        return View('vehicle.index');
+    }
+
     public function addVehicle(){
         return View('vehicle.addVehicle');  // view folder - vehicle folder - addVehicle.blade.php file
     }

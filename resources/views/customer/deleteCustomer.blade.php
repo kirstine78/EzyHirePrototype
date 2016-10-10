@@ -9,6 +9,10 @@
 
                 <div class="panel-body">
                     Delete Customer Page Under Construction!!!
+                    <br/>
+                    <br/>
+
+                    Should not redirect to this page but instead showing a confirmation box?
                 </div>
             </div>
         </div>
