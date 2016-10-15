@@ -5,12 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>EzyHire</title>
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+	<link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 
 	<script src="{{ asset('/js/jquery-3.1.1.js') }}"></script>
 	<script src="{{ asset('/js/bootstrap.js') }}"></script>
 </head>
 <body class="body_bg">
-	<div class="heading_bar"><h1 class="header_title">EzyHire</h1></div>
+
+
+	<div class="container">
+		<table class="table">
+			<tr width="100%">
+				<td width="20%">
+					<img src="{{URL::asset('/img/logo.jpg')}}" alt="profile Pic" width="auto"  >
+				</td>
+				<td width="80%">
+					<div class="heading_bar"><h1 class="title">EzyHire</h1></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
 	<nav class="navbar navbar-default custom_nav_bar">
 
 		<div class="container-fluid">
@@ -32,20 +48,20 @@
 					<li class="nav_buttons"><a href="{{ url('vehicle') }}" style="color:black;">Vehicle</a></li>
 
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">List
-							<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li class="nav_buttons"><a href="{{ url('list/bookings') }}"  style="color:black;">Bookings by Customer</a></li>
-							<li class="nav_buttons"><a href="{{ url('list/damages') }}"  style="color:black;">Damages by Customer</a></li>
-						</ul>
-					</li>
-
-					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">Report
 							<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li class="nav_buttons"><a href="{{ url('report/damage') }}"  style="color:black;">Damage Report</a></li>
 							<li class="nav_buttons"><a href="{{ url('report/fault') }}"  style="color:black;">Fault Report</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">List
+							<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="nav_buttons"><a href="{{ url('list/bookings') }}"  style="color:black;">Bookings by Customer</a></li>
+							<li class="nav_buttons"><a href="{{ url('list/damages') }}"  style="color:black;">Damages by Customer</a></li>
 						</ul>
 					</li>
 
@@ -66,8 +82,11 @@
 
 	@yield('content')
 
+
 	<div class="panel-footer">
-		<p class="copyright">EzyHire</p>
+		<div class="container">
+			EzyHire
+		</div>
 	</div>
 
 	<!-- Scripts -->

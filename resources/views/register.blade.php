@@ -9,6 +9,19 @@
 
                 <div class="panel-body">
                     Register Page Under Construction!!!
+                    <br/>
+                    <br/>
+
+                    Email (username)
+                    <br/>
+                    <input >
+                    <br/>
+                    <br/>
+
+                    <button type="submit" class="btn btn-success">
+                        <i class="fa fa-btn fa-trash">Register staff member</i>
+                    </button>
+                    (button click will on success display Register success message)
                 </div>
             </div>
         </div>

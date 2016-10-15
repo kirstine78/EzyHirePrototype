@@ -38,7 +38,7 @@
                         <button type="submit" class="btn btn-danger">
                             <i class="fa fa-btn fa-trash">Add</i>
                         </button>
-                        button click will on success redirect to customer overview
+                        (button click will on success redirect to customer overview)
                     </form>
                 </div>
             </div>

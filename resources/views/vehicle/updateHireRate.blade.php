@@ -37,7 +37,7 @@
                         <button type="submit" class="btn btn-success">
                             <i class="fa fa-btn fa-trash">Update</i>
                         </button>
-                        button click will on success redirect to vehicle overview
+                        (button click will on success redirect to vehicle overview)
                     </form>
                 </div>
             </div>

@@ -19,6 +19,7 @@
                     <button type="submit" class="btn btn-success">
                         <i class="fa fa-btn fa-trash">Show list</i>
                     </button>
+                    (button click will show list of bookings below)
                 </div>
             </div>
         </div>
