@@ -11,24 +11,16 @@
 |
 */
 
-// HomeController
-Route::get('/','HomeController@index' );
-
-// SuburbController
-Route::get('suburbs','SuburbController@index' );
-
-// BrandController
-Route::get('brands','BrandController@index' );
+// GeneralController
+Route::get('/','GeneralController@index' );
+Route::get('suburbs','GeneralController@getSuburbs' );
+Route::get('brands','GeneralController@getBrands' );
 
 // CustomerController
 Route::get('customer','CustomerController@index' );
 Route::get('customer/add','CustomerController@addCustomer' );
 Route::get('customer/update','CustomerController@updateCustomer' );
 Route::get('customer/delete','CustomerController@deleteCustomer' );
-
-// ListController
-Route::get('list/bookings','ListController@listBookingsByCustomer' );
-Route::get('list/damages','ListController@listDamagesByCustomer' );
 
 // VehicleController
 Route::get('vehicle','VehicleController@index' );
@@ -40,14 +32,14 @@ Route::get('vehicle/rateupdate','VehicleController@updateHireRate' );
 Route::get('report/damage','ReportController@showDamagesReport' );
 Route::get('report/fault','ReportController@showFaultsReport' );
 
+// ListController
+Route::get('list/bookings','ListController@listBookingsByCustomer' );
+Route::get('list/damages','ListController@listDamagesByCustomer' );
+
 // ArchiveController
 Route::get('archive','ArchiveController@index' );
 
-// RegisterController
-Route::get('register','RegisterController@index' );
-
-// LoginController
-Route::get('login','LoginController@index' );
-
-// LogoutController
-Route::get('logout','LogoutController@index' );
+// StaffController
+Route::get('register','StaffController@registerStaffMember' );
+Route::get('login','StaffController@login' );
+Route::get('logout','StaffController@logout' );

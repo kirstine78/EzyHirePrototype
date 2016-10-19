@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!--
+		Student name:    Kirstine Brørup Nielsen
+		Student id:      100527988
+		Date:            18.10.2016
+		Assignment:      EzyHire
+		Version:         Prototype
+		File:            addCustomer.blade.php
+	-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>EzyHire</title>
@@ -83,9 +91,9 @@
 	@yield('content')
 
 
-	<div class="panel-footer">
+	<div class="panel-footer"  style="position: fixed; bottom: 0px">
 		<div class="container">
-			EzyHire
+			Kirstine Brørup Nielsen 100527988
 		</div>
 	</div>
 
