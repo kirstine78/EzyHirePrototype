@@ -15,6 +15,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+/**
+ * Class CustomerController
+ * @package App\Http\Controllers
+ */
 class CustomerController extends Controller
 {
     public function index(){

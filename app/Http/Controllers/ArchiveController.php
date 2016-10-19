@@ -15,6 +15,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+/**
+ * Class ArchiveController
+ * @package App\Http\Controllers *
+ */
 class ArchiveController extends Controller
 {
     public function index(){

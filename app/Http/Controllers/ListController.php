@@ -15,6 +15,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+/**
+ * Class ListController
+ * @package App\Http\Controllers
+ */
 class ListController extends Controller
 {
     public function listBookingsByCustomer(){

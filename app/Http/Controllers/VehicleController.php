@@ -15,6 +15,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+/**
+ * Class VehicleController
+ * @package App\Http\Controllers
+ */
 class VehicleController extends Controller
 {
     public function index(){
