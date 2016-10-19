@@ -25,7 +25,6 @@ class ReportController extends Controller
         return View('report.showDamagesReport');
     }
 
-
     public function showFaultsReport(){
         return View('report.showFaultsReport');
     }

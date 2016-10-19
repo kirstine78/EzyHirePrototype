@@ -23,11 +23,11 @@ use App\Http\Requests;
 class StaffController extends Controller
 {
     public function registerStaffMember(){
-        return View('register');
+        return View('staff.register');
     }
 
     public function login(){
-        return View('login');
+        return View('staff.login');
     }
 
     public function logout(){

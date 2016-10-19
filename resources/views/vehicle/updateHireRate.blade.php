@@ -1,3 +1,12 @@
+<!--
+    Student name:    Kirstine Brørup Nielsen
+    Student id:      100527988
+    Date:            18.10.2016
+    Assignment:      EzyHire
+    Version:         Prototype
+    File:            updateHireRate.blade.php
+-->
+
 @extends('app')
 
 @section('content')

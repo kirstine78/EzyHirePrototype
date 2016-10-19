@@ -29,11 +29,11 @@ class GeneralController extends Controller
 
     // show suburbs in company
     public function getSuburbs(){
-        return View('suburb');
+        return View('general.suburb');
     }
 
     // show brands in company
     public function getBrands(){
-        return View('brand');
+        return View('general.brand');
     }
 }
