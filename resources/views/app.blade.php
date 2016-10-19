@@ -21,17 +21,29 @@
 <body class="body_bg">
 
 
+	{{--<div class="container">--}}
+		{{--<table class="table">--}}
+			{{--<tr width="100%">--}}
+				{{--<td width="20%">--}}
+					{{--<img id="logoCar" src="{{URL::asset('/img/logo.jpg')}}" alt="profile Pic" width="auto"  >--}}
+				{{--</td>--}}
+				{{--<td width="80%">--}}
+					{{--<div class="heading_bar" id="titleBanner"><h1 class="title">EzyHire</h1></div>--}}
+				{{--</td>--}}
+			{{--</tr>--}}
+		{{--</table>--}}
+	{{--</div>--}}
+
 	<div class="container">
-		<table class="table">
-			<tr width="100%">
-				<td width="20%">
-					<img src="{{URL::asset('/img/logo.jpg')}}" alt="profile Pic" width="auto"  >
-				</td>
-				<td width="80%">
-					<div class="heading_bar"><h1 class="title">EzyHire</h1></div>
-				</td>
-			</tr>
-		</table>
+		<div class="row">
+			<div class="col-md-4">
+				<img id="logoCar" src="{{URL::asset('/img/logo.jpg')}}" alt="profile Pic"  >
+			</div>
+
+			<div class="col-md-4">
+				<div class="heading_bar" id="titleBanner"><h1 class="title">EzyHire</h1></div>
+			</div>
+		</div>
 	</div>
 
 
